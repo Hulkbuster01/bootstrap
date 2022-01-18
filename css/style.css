@@ -12,6 +12,7 @@
     --orange: #ff6347;
     --grey: #797878;
     --grey-light: #d9d7d7;
+    --orange-dark: red
 }
 /**
 * header
@@ -19,4 +20,45 @@
 header section {
     background-image:url(../images/hero-image.jpg);
     background-size: cover;
+}
+
+.btn-primary {
+    background-color: var(--orange);
+    border: none;
+}
+.btn-primary:hover {
+    background-color: var(--orange-dark);
+    border: none;
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+.separator {
+    border: 1px solid var(--orange);
+    width: 130px;
+    margin: 20px auto;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: var(--black);
+    border-radius: 50%;
+    margin: 60px auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle img {
+    filter: invert(100%);
+    width: 65px;
+}
+
+.btn-light {
+    background-color: var(--white);
+    border: 1px solid var(--grey-light);
+    color: var(--orange);
 }
